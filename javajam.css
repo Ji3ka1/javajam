@@ -1,0 +1,297 @@
+* {box-sizing: border-box;}
+
+body{
+    background-color: #FCEBB6;
+    color: #221811;
+    font-family: Verdana, Arial, sans-serif;
+    background-image: url('images.zip/background.gif');
+}
+
+header{
+    background-color: #D2B48C;
+    /*text-align: center;*/
+    height: 150px;
+    background-image: url(javajamlogo.jpg);
+    background-repeat: no-repeat;
+}
+
+h1{
+    /*line-height: 200%;*/
+    padding-top: 45px;
+    padding-left: 220px;
+    font-size: 3em;
+}
+
+nav{
+    text-align: center;
+    font-weight: bold; 
+    font-size: 1.5em;
+    padding-top: 10px;
+    float: left;
+    width: 200px;
+}
+
+footer{
+    background-color:#D2B48C ;
+    font-size: .60em;
+    font-style:italic;
+    text-align: center;
+    padding-bottom: 10px;
+    border-top: 2px solid #221811;
+}
+
+#wrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #FEF6C2;*/
+    background-color: #231814;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 3px 3px 3px #333333;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:link{
+    color: #FEF6C2;
+}
+
+nav a:visited{
+    color: #D2B48C;
+}
+
+nav a:hover{
+    color: #CC9933;
+}
+
+nav ul{
+    /*remove the bullet*/
+    list-style-type: none;
+    padding-left: 0;
+}
+
+h4{
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: 0.5em ;
+    /*padding-bottom: 0.25em;*/
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #231814;
+    clear: left;
+}
+
+main{
+     /*padding: 0em 2em 2em 2em;*/
+    padding: 0em 0em 2em 0em;
+    margin-left: 200px;
+    background-color: #FEF6C2;
+}
+
+.details{
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+
+img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#heroroad{
+    background-image: url(heroroad.jpg);
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#heromugs{
+    background-image: url(heromugs.jpg);
+    background-size: 100% 100%;
+    height: 250px;
+}
+#heroguitar{
+    background-image: url(heroguitar.jpg);
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+
+
+main h2, main h3, main h4, main p, main div, main ul, main dl{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.floatleft{
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+
+header, nav, main, footer { display: block; }
+
+
+
+table{
+    width: 90%;
+    background-color: #FFFFCC;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+   /* border: 2px solid black;
+    border-collapse: separate;*/
+}
+
+td, th{
+    padding: 10px;
+
+    /*border: 1px solid black;*/
+}
+
+tr:nth-of-type(odd){
+    background-color: #D2B48C;
+}
+
+form{
+    padding: 2em;
+}
+
+label{
+    float: left;
+    display: block;
+    text-align: right;
+    width: 8em;
+    padding-right: 1em;
+}
+
+input, textarea{
+    display: block;
+    margin-bottom: 1em;
+}
+
+#mySubmit{
+    margin-left: 9.5em;
+}
+
+#herojobs{
+    background-image: url(herojobs.jpg);
+    height: 250px;
+    background-size: 100% 100%;
+}
+
+
+
+/*Display on tablet*/  
+@media only screen and (max-width: 1024px){
+    body{
+        background-image: none;
+        margin: 0;
+    }
+
+    #wrapper{
+        width: auto;
+        min-width: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    header{
+        border-bottom: 5px solid #F3F6C2;
+    }
+
+    h1{
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 2.5em;
+    }
+
+    nav{
+        float: none;
+        width: auto;
+        padding-top: 0;
+        margin:10px;
+        font-size: 1.3em;
+    }
+
+    nav li{
+        display: inline-block;
+    }
+
+    nav a{
+        padding: 1em;
+        width: 8em;
+    }
+
+    nav ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    main{
+        margin: 0;
+        font-size: 90%;
+    }
+}  
+
+/*Display on phone*/
+@media only screen and (max-width: 768px){
+    header{
+        background-image: none;
+        height: 100px;
+    }
+
+    h1{
+        font-size: 2em;
+        text-align: center;
+        padding-left: 0;
+        line-height: 1.5em;
+    }
+
+    nav{
+        margin: 0;
+    }
+
+    nav a{
+        display: block;
+        padding: 0.2em;
+        width: auto;
+        border-bottom: 1px solid #FEF6C2;
+    }
+
+    nav li{
+        display: block;
+    }
+
+    main{
+        padding-top: 3px;
+    }
+
+    h2{
+        margin: 0.5em 0 0   ;
+    }
+
+    .details{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #heroroad, #heromugs, #heroguitar, #herojobs{
+        background-image: none;
+        height: auto;
+    }
+
+    .floatleft{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
